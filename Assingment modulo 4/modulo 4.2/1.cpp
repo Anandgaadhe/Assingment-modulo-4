@@ -45,7 +45,7 @@ int main() {
     cout << "\nEnter second number: ";
     cin >> num2;
 
-    cout << "\nChoose an operation (+, -, *, /, %): ";
+    cout << "\nChoose an operation (+, -, *, / ): ";
     cin >> operat;
 
     switch (operat) {
@@ -60,9 +60,6 @@ int main() {
             break;
         case '/':
             cout << "\nResult: " << calc.divide(num1, num2);
-            break;
-        case '%':
-            cout << "\nResult: " << calc.modulus(static_cast<int>(num1), static_cast<int>(num2));
             break;
         default:
             cout << "\nInvalid operation!";
